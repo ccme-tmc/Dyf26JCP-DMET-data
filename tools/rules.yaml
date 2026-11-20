@@ -1,0 +1,36 @@
+# Exclusion rules used by tools/build_archive.py when this archive is rebuilt
+# from the author's origin data folder.
+#
+# Matching: a pattern that contains "/" is matched against the POSIX relative
+# path (`DybbBr/inpfile/freq.log`); a pattern without "/" is matched against the
+# file name only. "**/" matches any number of leading directories, "*" never
+# crosses a "/".
+#
+# Every excluded group and the space it saves is also listed in EXCLUDED.md.
+
+max_bytes: 52428800   # safety net: nothing above 50 MB (GitHub hard limit is 100 MB)
+
+exclude:
+  - pattern: "nohup.out"
+    reason: "scheduler stdout captured at run time; not scientific data"
+
+  - pattern: "**/__pycache__/**"
+    reason: "Python bytecode cache"
+
+  - pattern: "**/.vscode/**"
+    reason: "editor settings"
+
+  - pattern: "*.pyc"
+    reason: "Python bytecode"
+
+  - pattern: "*.whl"
+    reason: "third-party PyMOL wheel that ended up in the working folder"
+
+  - pattern: "*.chk"
+    reason: "binary PySCF checkpoint; rebuildable from eq*.xyz plus the inputs"
+
+  - pattern: "VASP.log"
+    reason: "byte-identical duplicate of freq.log in the same folder"
+
+  - pattern: "VP*.log"
+    reason: "legacy Molcas spin-phonon element dumps; the PySCF-path VP*.out matrices are archived instead"

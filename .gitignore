@@ -1,0 +1,12 @@
+# OS / editor noise
+.DS_Store
+Thumbs.db
+*.swp
+
+# Python
+__pycache__/
+*.py[cod]
+
+# Scratch space when re-running a configuration in place
+TPs_run/
+*.tmp

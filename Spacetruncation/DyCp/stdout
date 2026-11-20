@@ -1,0 +1,17 @@
+/fs2/home/jiangh/members/Dengyf/relaxtime/DMET/DyCp/Analyze_CFPs_all.py:2317: ComplexWarning: Casting complex values to real discards the imaginary part
+  TP[f,i,j] =2*np.pi**2*a*b*const.c*1e10*(1-Delta(f,i))  #translate cm^-1 to J
+Traceback (most recent call last):
+  File "/fs2/home/jiangh/members/Dengyf/relaxtime/DMET/DyCp/Analyze_CFPs_all.py", line 2993, in <module>
+    np.savetxt("TPs_file/OB_{x}_py.dat".format(x=serange),np.column_stack((OBT_list,-np.real(OBavg),OBstd)))
+                                                 ^^^^^^^
+NameError: name 'serange' is not defined. Did you mean: 'nTrange'?
+/fs2/software/ase/ase-3.22.1/ase/atoms.py:967: VisibleDeprecationWarning: Use get_global_number_of_atoms() instead
+  warnings.warn('Use get_global_number_of_atoms() instead',
+/fs2/home/jiangh/software/miniconda3/lib/python3.11/site-packages/matplotlib/cbook.py:1719: ComplexWarning: Casting complex values to real discards the imaginary part
+  return math.isfinite(val)
+/fs2/home/jiangh/software/miniconda3/lib/python3.11/site-packages/matplotlib/cbook.py:1355: ComplexWarning: Casting complex values to real discards the imaginary part
+  return np.asarray(x, float)
+/fs2/home/jiangh/members/Dengyf/relaxtime/DMET/DyCp/Analyze_CFPs.py:2991: ComplexWarning: Casting complex values to real discards the imaginary part
+  print("U_{eff} of Orbach is "+'%1.1f'%OBimfor[0]+" K")
+/fs2/home/jiangh/members/Dengyf/relaxtime/DMET/DyCp/Analyze_CFPs.py:2992: ComplexWarning: Casting complex values to real discards the imaginary part
+  print("log(tau) is "+'%1.2f'%logOBtau+" s")

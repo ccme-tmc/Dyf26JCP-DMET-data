@@ -1,0 +1,18 @@
+/fs2/software/ase/ase-3.22.1/ase/atoms.py:967: VisibleDeprecationWarning: Use get_global_number_of_atoms() instead
+  warnings.warn('Use get_global_number_of_atoms() instead',
+/fs2/home/jiangh/members/Dengyf/relaxtime/DMET/DyAC/Analyze_CFPs_260309.py:585: DeprecationWarning: loadtxt(): Parsing an integer via a float is deprecated.  To avoid this warning, you can:
+    * make sure the original data is stored as integers.
+    * use the `converters=` keyword argument.  If you only use
+      NumPy 1.23 or later, `converters=float` will normally work.
+    * Use `np.loadtxt(...).astype(np.int64)` parsing the file as
+      floating point and then convert it.  (On all NumPy versions.)
+  (Deprecated NumPy 1.23)
+  Select_Atnum = np.loadtxt('inpfile/Atom_list',dtype=int)
+/fs2/home/jiangh/software/miniconda3/lib/python3.11/site-packages/matplotlib/cbook.py:1719: ComplexWarning: Casting complex values to real discards the imaginary part
+  return math.isfinite(val)
+/fs2/home/jiangh/software/miniconda3/lib/python3.11/site-packages/matplotlib/cbook.py:1355: ComplexWarning: Casting complex values to real discards the imaginary part
+  return np.asarray(x, float)
+/fs2/home/jiangh/members/Dengyf/relaxtime/DMET/DyAC/Analyze_CFPs_260309.py:2928: ComplexWarning: Casting complex values to real discards the imaginary part
+  print(Mlabel+"U_{eff} of Orbach is "+'%1.1f'%OBimfor[0]+" K")
+/fs2/home/jiangh/members/Dengyf/relaxtime/DMET/DyAC/Analyze_CFPs_260309.py:2929: ComplexWarning: Casting complex values to real discards the imaginary part
+  print("log(tau) is "+'%1.2f'%logOBtau+" s")

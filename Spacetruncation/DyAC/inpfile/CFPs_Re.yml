@@ -1,0 +1,39 @@
+#the filename you need input
+CFPs_filename: inpfile/CFPs_ori.out
+mag_filename: inpfile/eq.log
+freq_filename: inpfile/freq.log
+TPs_foldname: TPs/TPs_new2
+ESO_foldname: inpfile/ESO
+VP_filename: inpfile/VP_new.log
+POSCAR: inpfile/POSCAR
+#the correction of freq
+Correction_slope: 1    
+Corrected_intercept: 0
+#Correction_slope: 0.96    
+#Corrected_intercept: 52.888
+
+#the order you want to fit the Bkq
+Fitting_order: 1    
+
+#the point of the CFPs
+CFPs_X: [-1,0,1] 
+
+#the Linewidth_parameters
+Linewidth_parameter: 1
+
+#the temprature range 
+If_T_step: True
+nTrange: 3
+#Trange1: 10,20,10
+Trange1: 20,60,10
+Trange2: 10,20,2
+Trange3: 2,10,1
+
+#the function
+If_get_picture_Tt: True
+If_select_sigma: True
+select_sigma: 20
+If_Orbach: True
+If_Laman: True
+
+

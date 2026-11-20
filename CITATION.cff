@@ -1,0 +1,44 @@
+cff-version: 1.2.0
+message: "If you use these data, please cite the paper and this archive."
+title: "SMMRT-DMET-ST-data: data archive for ab initio spin-phonon relaxation of single-ion magnets"
+abstract: "Raw and processed data for the three compounds (DyAC, DybBr, DyCp) and the spatial-truncation study of the manuscript 'Accelerating ab initio spin-phonon relaxation simulation of single-ion magnets by quantum embedding and spatial truncation': crystal-field parameters, spin-phonon coupling matrices, master-equation matrices, tau(T) data, phonons, structures, figures and the scripts as used at run time."
+version: "1.0.0"
+date-released: "2026-11-20"
+license: CC-BY-4.0
+repository-code: "https://github.com/ccme-tmc/SMMRT-DMET-ST-data"
+url: "https://github.com/ccme-tmc/SMMRT-DMET-ST-data"
+keywords:
+  - single-ion magnets
+  - spin-phonon coupling
+  - density matrix embedding theory
+  - CASSCF
+  - spatial truncation
+  - magnetic relaxation
+  - Dy(III) complexes
+authors:
+  - family-names: "Deng"
+    given-names: "Yifan"
+  - name: "LAMP-tau contributors"
+preferred-citation:
+  type: article
+  title: "Accelerating ab initio spin-phonon relaxation simulation of single-ion magnets by quantum embedding and spatial truncation"
+  authors:
+    - family-names: "Deng"
+      given-names: "Yifan"
+    - name: "and co-workers"
+  year: 2026
+  journal: "The Journal of Chemical Physics"
+  # DOI: to be completed after publication
+references:
+  - type: software
+    title: "LAMP-tau: Python tools for ab initio spin-phonon relaxation of single-ion magnets"
+    repository: "https://github.com/ccme-tmc/LAMP_tau"
+    version: "1.0.0"
+    year: 2026
+    license: MIT
+    authors:
+      - family-names: "Deng"
+        given-names: "Yifan"
+# identifiers:
+#   - type: doi
+#     value: 10.5281/zenodo.XXXXXXX

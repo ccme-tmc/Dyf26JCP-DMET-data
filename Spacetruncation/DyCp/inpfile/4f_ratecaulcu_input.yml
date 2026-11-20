@@ -1,0 +1,50 @@
+#the filename you need input
+hessian_filename: inpfile/DyCp2_opt_freq_PBELS.hess
+g_filename: inpfile/output_origin
+ESO_foldname: inpfile/ESO_TTO
+
+CFPs_filename: inpfile/CFPs_oc.out
+mag_filename: inpfile/eqout
+VP_filename: inpfile/VPoc0108_all_p.out
+TPs_foldname: TPs/oc0108_all_p
+
+# CFPs_filename: inpfile/CFPs_py.out
+# mag_filename: inpfile/eqout
+# VP_filename: inpfile/VPpy0108_all_p.out
+# TPs_foldname: TPs/py0108_all_p
+
+
+#the correction of freq
+Correction_slope: 1    
+Corrected_intercept: 0
+#Correction_slope: 0.96    
+#Corrected_intercept: 52.888
+
+#the order you want to fit the Bkq
+Fitting_order: 1    
+
+#the point of the CFPs
+CFPs_X: [-0.1,-0.08,-0.06,-0.04,-0.02,0,0.02,0.04,0.06,0.08,0.1]  # for Xi_perb
+#CFPs_X: [-1,-0.8,-0.6,-0.4,-0.2,0,0.2,0.4,0.6,0.8,1]   # for Qj_perb
+#CFPs_X: [-0.1,-0.06,-0.02,0,0.02,0.06,0.1]  # for Xi_perb_test
+
+#the Linewidth_parameters
+Linewidth_parameter: 10
+
+#the temprature range 
+If_T_step: True
+nTrange: 1
+#Trange1: 80,100,10
+Trange1: 60,130,10
+#Trange2: 100,1000,50
+Trange2: 20,60,5
+Trange3: 8,10,1
+
+#the function
+If_get_picture_Tt: True
+If_select_sigma: True
+select_sigma: 100
+If_Orbach: True
+If_Laman: False
+
+

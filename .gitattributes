@@ -1,0 +1,5 @@
+# Scientific data must stay byte-identical: disable end-of-line normalisation
+# everywhere, so that `git clone` returns exactly the bytes recorded in
+# manifest.csv (sha256).  Text diffing is still possible for the files git
+# treats as text on demand (`git diff --text`).
+* -text
